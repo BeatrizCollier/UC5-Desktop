@@ -2,12 +2,27 @@
 GET http://localhost:3000/produtos
 ### fechando a requisição
 
-### Rora criando o produto
+### Rota criando o produto
 POST http://localhost:3000/produtos
 Content-Type: application/json 
 
 {
     "id": 1,
     "nome": "GTX 4090 24GB",
-    "preco": 14450
+    "preco": 14450,
+    "quantidade": 5
 }
+
+###
+
+### Rota editando o produto
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json 
+
+{
+    "nome": "Monitor",
+    "preco": 3000,
+    "quantidade": 4
+}
+
+###
